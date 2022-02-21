@@ -129,3 +129,19 @@ body {
 .banner>img{
     width: 100%;
 }
+
+/* Features */
+
+.features-row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 4vw;
+    justify-content: center;
+    gap: 3vw;
+}
+
+/* Testimonials */
+
+.testimonials{
+    background-image: url("./materiale/trae.jpg");
+}
