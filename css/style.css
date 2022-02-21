@@ -143,5 +143,24 @@ body {
 /* Testimonials */
 
 .testimonials{
-    background-image: url("./materiale/trae.jpg");
+    background-image: url("/materiale/trae.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial-row{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.testimonial-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding-bottom: 2vw;
+}
+.testimonial-images img:nth-child(2),img:nth-child(3){
+    align-self: center;
 }
