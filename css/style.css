@@ -2,7 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.175em;
+  font-size: 1.075em;
   font-weight: 500;
 }
 * {
@@ -17,27 +17,27 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 2.6fr;
+  grid-template-columns: 1fr 2.5fr;  
   justify-items: center;
   align-items: center;
 }
 .logo {
   justify-self: end;
   text-align: right;
+  padding-right: 1.5vw;
 }
 .logo > img {
-  margin-top: 15px;
-  width: 50%;
-  height: auto;
+    max-width: 60%;
+    height: auto;
 }
 
 .right-side-header {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: auto;
-  grid-gap: 10px;
+  grid-template-rows: auto auto;  
   align-items: start;
   justify-items: end;
+  font-size: 0.900em;
+  font-weight: bold;
 
   /* margin-top: auto;
     margin-right: 4vw;
@@ -79,7 +79,7 @@ body {
   display: block;
   color: #000;
   text-align: center;
-  padding: 14px 14px;
+  padding: 14px 8px;
   text-decoration: none;
 }
 .nav-link:hover {
@@ -87,26 +87,35 @@ body {
   text-underline-position: under;
 }
 
+/* Banner */
 .banner {
+  clear: both;
   text-align: left;
-  width: 100%;
-  height: 500px;
   background-image: url("/materiale/slider.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
+  max-height: 60%;
+}
+.banner-image {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 40%;
 }
 .banner > div {
-  position: absolute;
-  left: 550;
-  top: 350;
+  padding: 5vw 0 2vw 20vw;
   color: #fff;
-  font-size: x-large;
+  line-height: 20px;
+  height: max-content;
+  font-size: 2.5em;
+}
+.banner > div > h1 {
+  font-weight: 1000;
 }
 
 .banner-btn {
   background-color: #7a0202;
   color: #fff;
-  width: 50%;
   padding: 5px 20px;
   opacity: 70%;
 }
@@ -138,16 +147,21 @@ body {
 
 .testimonial-row {
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  gap: 2vw;
+  grid-template-columns: repeat(2, minmax(100px,560px));
+  justify-content: center;  
+  gap: 0 5px;
+  padding: 1.5vw;
+  
 }
 
 .testimonial-col {
   text-align: left;
+  
+  
 }
 .testimonial-col > p {
-  line-height: 30px;
+  /* line-height: 30px; */
+  /* margin: auto; */
 }
 
 .testimonial-images {
@@ -171,16 +185,16 @@ img:nth-child(3) {
 }
 .contact-us-row {
   display: grid;
-  grid-template-columns: 1fr 2.2fr 3fr 1fr;
-  gap: 2vw;
+  grid-template-columns: 1.5fr 2.4fr 3.4fr 1fr;
+  /* gap: 1vw; */
   justify-content: center;
   /* justify-items: center; */
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
 }
 
 .contact-us-form {
   grid-column: 2/3;
-  height: 80%;
+  padding: 1vw;
 }
 
 .contact-us-form > input,
@@ -198,9 +212,12 @@ textarea {
   margin: 5px 0;
   /* grid-column: 1/2; */
 }
-.contact-us-row > iframe {
+.contact-us-row > img {
   grid-column: 3/4;
-  height: 80%;
+  max-width:100%;
+  height:95%;
+  border: 0;
+  padding: 0.7vw;
 }
 
 /* Footer */
@@ -248,32 +265,54 @@ textarea {
   margin-left: 4vw;
   margin-bottom: 0;
 }
-@media (max-width:1200px) {
-    .features-row{
-        display: block;
-    }
-    .testimonial-row{
-        display: block;
-    }
-    .testimonial-images{
-        display: block;
-        text-align: center;
-    }
-    .testimonial-images>img{
-        display: block;
-        margin: 20px auto;
-    }
-    .contact-us-row{
-        display: block;
-    }
-    .footer-images{
-        display: block;
-    }
-    .ankenævn>p{
-        text-align: center;
-    }
-    .footer-contact{
-        display: block;
-    }
-    
+@media (max-width: 1200px) {
+  .header {
+    display: block;
+  }
+  .logo{
+      text-align: center;
+  }
+  .logo>img{
+      /* width: auto; */
+  }
+  .right-side-header {
+    display: block;
+  }
+  .nav-item {
+    display: block;
+    float: none;
+  }
+  .features-row {
+    display: block;
+  }
+  .testimonial-row {
+    display: block;
+  }
+  .testimonial-images {
+    display: block;
+    text-align: center;
+  }
+  .testimonial-images > img {
+    display: block;
+    margin: 20px auto;
+  }
+  .contact-us-row {
+    display: block;
+  }
+  .contact-us-row > img {
+    max-width:70%;
+    height:60%;
+  }
+  .footer-images {
+    display: block;
+  }
+  .ankenævn > p {
+    text-align: center;
+  }
+  .footer-contact {
+    display: block;
+  }
+  .contact-us-row > iframe {
+    height: fit-content;
+  }
 }
