@@ -17,7 +17,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;  
+  grid-template-columns: 1fr 2.5fr;
   justify-items: center;
   align-items: center;
 }
@@ -27,29 +27,22 @@ body {
   padding-right: 1.5vw;
 }
 .logo > img {
-    max-width: 60%;
-    height: auto;
+  max-width: 60%;
+  height: auto;
 }
 
 .right-side-header {
   display: grid;
-  grid-template-rows: auto auto;  
+  grid-template-rows: auto auto;
   align-items: start;
   justify-items: end;
-  font-size: 0.900em;
+  font-size: 0.9em;
   font-weight: bold;
-
-  /* margin-top: auto;
-    margin-right: 4vw;
-    text-align: right; */
 }
 
 .contact {
   margin-bottom: 15px;
   margin-right: 6px;
-
-  /* display: grid;
-    grid-template-columns: repeat(3,auto); */
 }
 .contact > a {
   margin-left: 2vw;
@@ -93,7 +86,7 @@ body {
   text-align: left;
   background-image: url("https://sinanba.github.io/Opgave-1/materiale/slider.jpg");
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   max-height: 60%;
 }
 .banner-image {
@@ -147,21 +140,14 @@ body {
 
 .testimonial-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(100px,560px));
-  justify-content: center;  
+  grid-template-columns: repeat(2, minmax(100px, 560px));
+  justify-content: center;
   gap: 0 5px;
   padding: 1.5vw;
-  
 }
 
 .testimonial-col {
   text-align: left;
-  
-  
-}
-.testimonial-col > p {
-  /* line-height: 30px; */
-  /* margin: auto; */
 }
 
 .testimonial-images {
@@ -186,10 +172,7 @@ img:nth-child(3) {
 .contact-us-row {
   display: grid;
   grid-template-columns: 1.5fr 2.4fr 3.4fr 1fr;
-  /* gap: 1vw; */
   justify-content: center;
-  /* justify-items: center; */
-  /* margin-left: 5vw; */
 }
 
 .contact-us-form {
@@ -210,12 +193,11 @@ textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 5px 0;
-  /* grid-column: 1/2; */
 }
 .contact-us-row > img {
   grid-column: 3/4;
-  max-width:100%;
-  height:95%;
+  max-width: 100%;
+  height: 95%;
   border: 0;
   padding: 0.7vw;
 }
@@ -224,12 +206,7 @@ textarea {
 .footer {
   background-color: #222;
   color: #fff;
-  /* display: grid;
-  grid-template-rows: auto auto;
-  gap: 2vw; */
-  /* padding: 2vw 0; */
   margin-top: 2vw;
-  /* justify-content: space-between; */
 }
 .footer-images {
   display: grid;
@@ -237,7 +214,6 @@ textarea {
 
   justify-content: center;
   gap: 0 12vw;
-  /* margin-left: 15vw; */
   width: 100%;
 }
 .footer-images > img {
@@ -246,7 +222,6 @@ textarea {
 }
 .ankenævn {
   text-align: right;
-  /* margin: auto; */
   justify-self: center;
 }
 .ankenævn-info {
@@ -269,11 +244,8 @@ textarea {
   .header {
     display: block;
   }
-  .logo{
-      text-align: center;
-  }
-  .logo>img{
-      /* width: auto; */
+  .logo {
+    text-align: center;
   }
   .right-side-header {
     display: block;
@@ -281,6 +253,10 @@ textarea {
   .nav-item {
     display: block;
     float: none;
+  }
+  .banner > div {    
+    line-height: 20px;    
+    font-size: 1.5em;
   }
   .features-row {
     display: block;
@@ -300,11 +276,12 @@ textarea {
     display: block;
   }
   .contact-us-row > img {
-    max-width:70%;
-    height:60%;
+    width: 95%;
+    height: 35%;
   }
   .footer-images {
     display: block;
+    padding-top: 1.4vw;
   }
   .ankenævn > p {
     text-align: center;
