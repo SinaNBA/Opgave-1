@@ -91,7 +91,7 @@ body {
 .banner {
   clear: both;
   text-align: left;
-  background-image: url("/materiale/slider.jpg");
+  background-image: url("https://sinanba.github.io/Opgave-1/materiale/slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;  
   max-height: 60%;
@@ -139,7 +139,7 @@ body {
 /* Testimonials */
 
 .testimonials {
-  background-image: url("/materiale/trae.jpg");
+  background-image: url("https://sinanba.github.io/Opgave-1/materiale/trae.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3vw;
