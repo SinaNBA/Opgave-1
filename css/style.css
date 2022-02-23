@@ -89,12 +89,6 @@ body {
   background-size: cover;
   max-height: 60%;
 }
-.banner-image {
-  display: block;
-  width: 100%;
-  position: relative;
-  height: 40%;
-}
 .banner > div {
   padding: 5vw 0 2vw 20vw;
   color: #fff;
